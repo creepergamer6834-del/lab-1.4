@@ -13,6 +13,7 @@ public class Sequences {
     public String countUp(int start, int limit) {
         String result = "";
         result += start;
+        start += 1;
         for (; start <= limit; start++) {
             result += " ";
             result += start;
@@ -24,7 +25,7 @@ public class Sequences {
     public String countByThrees(int start, int limit) {
         String result = "";
         result += start;
-        for (int n = start; n <= limit; n += 3) {
+        for (int n = start + 3; n <= limit; n += 3) {
             result += " ";
             result += n;
 
