@@ -14,9 +14,6 @@ public class Sequences {
         String result = "";
         result += start;
         start += 1;
-        if (start < limit) {
-            return "";
-        }
         for (; start <= limit; start++) {
             result += " ";
             result += start;
@@ -28,9 +25,6 @@ public class Sequences {
     public String countByThrees(int start, int limit) {
         String result = "";
         result += start;
-        if (start < limit) {
-            return "";
-        }
         for (int n = start + 3; n <= limit; n += 3) {
             result += " ";
             result += n;
