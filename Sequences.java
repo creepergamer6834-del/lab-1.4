@@ -12,10 +12,10 @@ public class Sequences {
     // Read REQ 03
     public String countUp(int start, int limit) {
         String result = "";
+        result += start;
         for (; start <= limit; start++) {
-
-            result += start;
             result += " ";
+            result += start;
         }
         return result;
     }
@@ -23,10 +23,11 @@ public class Sequences {
     // Read REQ 04
     public String countByThrees(int start, int limit) {
         String result = "";
+        result += start;
         for (int n = start; n <= limit; n += 3) {
-
-            result += n;
             result += " ";
+            result += n;
+
         }
         return result;
     }
