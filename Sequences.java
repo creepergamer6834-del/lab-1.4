@@ -14,6 +14,10 @@ public class Sequences {
         String result = "";
         result += start;
         start += 1;
+        if (start > limit) {
+            result = "";
+            return result;
+        }
         for (; start <= limit; start++) {
             result += " ";
             result += start;
@@ -25,6 +29,10 @@ public class Sequences {
     public String countByThrees(int start, int limit) {
         String result = "";
         result += start;
+        if (start > limit) {
+            result = "";
+            return result;
+        }
         for (int n = start + 3; n <= limit; n += 3) {
             result += " ";
             result += n;
@@ -94,7 +102,7 @@ public class Sequences {
     }
 
     public String powersOfTwo(int count) {
-        String result = "0";
+        String result = "1";
         for (int n = 1; n <= count; n++) {
             result += " ";
             result += 2 * n;
@@ -106,6 +114,10 @@ public class Sequences {
     public String countBy(int start, int limit, int step) {
         String result = "";
         result += start;
+        if (start > limit) {
+            result = "";
+            return result;
+        }
         for (int n = start + step; n <= limit; n += step) {
             result += " ";
             result += n;
