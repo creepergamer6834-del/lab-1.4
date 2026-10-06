@@ -102,6 +102,9 @@ public class Sequences {
     }
 
     public String powersOfTwo(int count) {
+        if (count < 1) {
+            return "";
+        }
         String result = "1";
         for (int n = 1; n < count; n++) {
             result += " ";
