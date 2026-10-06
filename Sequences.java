@@ -11,13 +11,13 @@ public class Sequences {
 
     // Read REQ 03
     public String countUp(int start, int limit) {
+        if (start > limit) {
+            return "";
+        }
         String result = "";
         result += start;
         start += 1;
-        if (start > limit) {
-            result = "";
-            return result;
-        }
+
         for (; start <= limit; start++) {
             result += " ";
             result += start;

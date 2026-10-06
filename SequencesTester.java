@@ -9,7 +9,7 @@ public class SequencesTester {
         System.out.println("sumOfFirst(5): [" + sequences.sumOfFirst(5) + "]");
         System.out.println("sumOfFirst(0): [" + sequences.sumOfFirst(0) + "]");
 
-        System.out.println("countUp(-2, 2): [" + sequences.countUp(-2, 2) + "]");
+        System.out.println("countUp(4, 4): [" + sequences.countUp(4, 4) + "]");
         System.out.println("countUp(5, 3): [" + sequences.countUp(5, 3) + "]");
 
         System.out.println("countByThrees(1, 10): [" + sequences.countByThrees(1, 10) + "]");
