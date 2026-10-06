@@ -105,7 +105,7 @@ public class Sequences {
         String result = "1";
         for (int n = 1; n <= count; n++) {
             result += " ";
-            result += 2 * n;
+            result += (int) (Math.pow(2, n));
 
         }
         return result;
