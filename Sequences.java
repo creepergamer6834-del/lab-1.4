@@ -72,4 +72,45 @@ public class Sequences {
         }
         return result;
     }
+
+    public int sumOfSquares(int n) {
+        int result = 0;
+        for (; n > 0; n--) {
+            result += n * n;
+        }
+        return result;
+    }
+
+    public int alternatingSum(int n) {
+        int result = 0;
+        for (; n > 0; n--) {
+            if (n % 2 == 0) {
+                result -= n;
+            } else {
+                result += n;
+            }
+        }
+        return result;
+    }
+
+    public String powersOfTwo(int count) {
+        String result = "0";
+        for (int n = 1; n <= count; n++) {
+            result += " ";
+            result += 2 * n;
+
+        }
+        return result;
+    }
+
+    public String countBy(int start, int limit, int step) {
+        String result = "";
+        result += start;
+        for (int n = start + step; n <= limit; n += step) {
+            result += " ";
+            result += n;
+
+        }
+        return result;
+    }
 }

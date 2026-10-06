@@ -26,5 +26,9 @@ public class SequencesTester {
 
         System.out.println("power(2, 9): [" + sequences.power(2, 9) + "]");
         System.out.println("power(5, 0): [" + sequences.power(5, 0) + "]");
+
+        System.out.println("sumOfSquares(4): [" + sequences.sumOfSquares(4) + "]");
+        System.out.println("alternating Sum(4): [" + sequences.alternatingSum(4) + "]");
+        System.out.println("powers of 2(4): [" + sequences.powersOfTwo(4) + "]");
     }
 }
